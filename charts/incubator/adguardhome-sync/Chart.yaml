@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: v0.4.9
+description: adguardhome-sync helm package
+name: adguardhome-sync
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - adguardhome-sync
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/adguardhome-sync
+icon: https://adguardhome-sync.org/icon
+sources:
+  - https://github.com/bakito/adguardhome-sync
+maintainers:
+  - name: adguardhome-sync
+    email: adguardhome-sync@adguardhome-sync.com
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
