@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: v1.3.1
+description: lx-music-sync-server helm package
+name: lx-music-sync-server
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - lx-music-sync-server
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/lx-music-sync-server
+icon: https://lx-music-sync-server.org/icon
+sources:
+  - https://github.com/lx-music-sync-server/lx-music-sync-server-docker
+maintainers:
+  - name: lx-music-sync-server
+    email: lx-music-sync-server@lx-music-sync-server.com
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
